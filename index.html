@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cloak Of Darkness</title>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand|Skranji|Lobster|McLaren|Changa+One|Lemon' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.js"></script>
+    <script src="js/typogame.js"></script>
+    <script src="js/cloak.js"></script>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            -webkit-user-select: none;
+        }
+    	#scene{
+    		position:absolute;
+    		width:1024px;
+    		height:560px;
+    		background: #eee;
+    		overflow: hidden;
+    	}
+    	#scene span{
+    		position: absolute;
+    		cursor: default;
+    	}
+    	#scene span.interactive{
+    		cursor: pointer;
+    	}
+
+        #message{
+            background: #ccc;
+            color:#333;
+            font-family: "Quicksand";
+            position:absolute;
+            top:560px;
+            left:112px;
+            width:892px;
+            height:106px;
+            padding: 3px 10px;
+            font-size: 22px;
+        }
+    </style>
+
+    <style>
+    	#scene.room_unlit{
+    		background-color: #333;
+    	}
+    </style>
+  </head>
+<body>
+	<div id="scene">
+	</div>
+    <div id="message">
+    </div>
+	<script>
+	cloakAdventure.start();
+	</script>
+</body>
+</html>
