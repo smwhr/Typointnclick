@@ -33,6 +33,7 @@ Item.prototype.message = function(text){
 TypoAdv.prototype.emptyScene = function(){
 	$("#"+this.div_id).empty();
 	$("#"+this.div_id).attr("class","");
+	$("#message").html("");
 }
 TypoAdv.prototype.message = function(text){
 	$("#message").html(nl2br(text))
